@@ -1,0 +1,62 @@
+/* ShopOwnerForm.css */
+
+.form-container {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center; /* centers the title */
+}
+
+.form-container h2 {
+  color: #2b2b2b;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center all input fields horizontally */
+  gap: 15px;
+  padding: 20px;
+}
+
+.input-field {
+  width: 90%;
+  max-width: 400px; /* keeps consistent width */
+  padding: 10px 12px;
+  border: 1px solid #cdd0d4;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.input-field:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 5px rgba(74, 108, 247, 0.3);
+  outline: none;
+}
+
+button.input-field {
+  background: #4a6cf7;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+  width: 100%; /* make button full width of input fields */
+  max-width: 400px;
+}
+
+button.input-field:hover {
+  background: #3759e4;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+}

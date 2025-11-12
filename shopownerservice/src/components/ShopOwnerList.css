@@ -1,0 +1,100 @@
+/* ShopOwnerList.css */
+
+.shop-list-container {
+  margin: 30px auto;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.shop-list-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2b2b2b;
+  font-size: 1.5rem;
+}
+
+.no-data {
+  text-align: center;
+  color: #777;
+  font-size: 1rem;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+.shop-card {
+  background: #f8faff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #e0e6f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.shop-details h3 {
+  color: #334;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.shop-details p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #4a6cf7;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #3759e4;
+}
+
+.delete-btn {
+  background-color: #f7584a;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e33c2e;
+}
+
+@media (max-width: 600px) {
+  .shop-card {
+    padding: 12px;
+  }
+
+  .shop-details p {
+    font-size: 0.9rem;
+  }
+}
